@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Srujana Portfolio</title>
+
+    <style>
+
+        /* ===== BASIC SETTINGS ===== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        /* ===== HEADER ===== */
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 30px 10%;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+
+        /* ===== PROFILE PHOTO ===== */
+
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+
+        /* ===== NAVIGATION ===== */
+
+        nav {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+
+        /* ===== MAIN ===== */
+
+        main {
+            width: 80%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+
+        /* ===== SECTIONS ===== */
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1e3a8a;
+            font-size: 28px;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            padding-bottom: 8px;
+        }
+
+        section p {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+
+        /* ===== EDUCATION ===== */
+
+        .education {
+            background-color: #eef4ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #1e3a8a;
+            border-radius: 5px;
+        }
+
+        .education h3 {
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+
+
+        /* ===== SKILLS ===== */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .skill:hover {
+            background-color: #2563eb;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+
+        /* ===== CONTACT ===== */
+
+        .contact-info {
+            background-color: #f1f5f9;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+
+        /* ===== MOBILE SCREEN ===== */
+
+        @media (max-width: 600px) {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin-top: 20px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            main {
+                width: 90%;
+            }
+
+            .skills {
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="header-content">
+
+            <div>
+                <h1>Kumboji Srujana</h1>
+
+                <p>
+                    B.Tech 2nd Year - Computer Science Engineering
+                </p>
+            </div>
+
+
+            <!-- Replace profile.jpg with your photo name -->
+            <img src="profile.jpg 
+                 alt="Srujana Profile Photo"
+                 class="profile-photo">
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <a href="#about">About</a>
+
+            <a href="#education">Education</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+
+        <!-- ===== ABOUT ===== -->
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Srujana. I am a B.Tech 2nd year
+                Computer Science Engineering student.
+            </p>
+
+            <p>
+                I am interested in programming, web development,
+                and learning new technologies. I am currently
+                improving my skills in HTML, CSS, Java, Python
+                and JavaScript.
+            </p>
+
+        </section>
+
+
+
+        <!-- ===== EDUCATION ===== -->
+
+        <section id="education">
+
+            <h2>Education</h2>
+
+
+            <div class="education">
+
+                <h3>B.Tech - Computer Science Engineering</h3>
+
+                <p>
+                    <strong>College:</strong>
+                    Malla Reddy Deemed to be University
+                </p>
+
+                <p>
+                    <strong>Year:</strong>
+                    2026 - Present
+                </p>
+
+                <p>
+                    <strong>CGPA:</strong>
+                    7.9
+                </p>
+
+            </div>
+
+
+            <div class="education">
+
+                <h3>Intermediate / 12th</h3>
+
+                <p>
+                    <strong>College:</strong>
+                    Narayana Junior College
+                </p>
+
+                <p>
+                    <strong>Year:</strong>
+                    2025
+                </p>
+
+                <p>
+                    <strong>Score:</strong>
+                    88.3%
+                </p>
+
+            </div>
+
+
+            <div class="education">
+
+                <h3>SSC / 10th</h3>
+
+                <p>
+                    <strong>School:</strong>
+                    Bhashyam High School
+                </p>
+
+                <p>
+                    <strong>Year:</strong>
+                    2023
+                </p>
+
+                <p>
+                    <strong>Score:</strong>
+                    8.5
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ===== SKILLS ===== -->
+
+        <section id="skills">
+
+            <h2>My Skills</h2>
+
+            <div class="skills">
+
+                <div class="skill">HTML</div>
+
+                <div class="skill">CSS</div>
+
+                <div class="skill">Java</div>
+
+                <div class="skill">Python</div>
+
+                <div class="skill">JavaScript</div>
+
+                <div class="skill">Communication</div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ===== CONTACT ===== -->
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <div class="contact-info">
+
+                <strong>Email:</strong>
+                srujanakumboji@gmail.com
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <strong>Phone:</strong>
+                9398081878
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <strong>Location:</strong>
+                Hyderabad, Telangana
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Kumboji Srujana
+        </p>
+
+        <p>
+            Created using HTML & CSS
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
